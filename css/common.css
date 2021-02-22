@@ -1,0 +1,264 @@
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Flat H, P parameters */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* -----Variables----- */
+:root {
+  --bg-color-main: #fff;
+  --bg-color-secondary: #f5f4fa;
+  --bg-color-dark: #2f303a;
+  --font-color-main: #212121;
+  --font-color-secondary: #757575;
+  --font-color-white: #fff;
+  --font-color-black: #000;
+  --accent-color: #2196f3;
+  --border-color: #ececec;
+  --social-link-color: #afb1b8;
+  --btn-boxshadow-color: rgba(0, 0, 0, 0.15);
+  --team-mate-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --card-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --transparent-links: rgba(255, 255, 255, 0.6);
+  --item-set-gap: 30px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--font-color-main);
+  background-color: var(--bg-color-main);
+}
+
+/* -----Container----- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* -----Logo----- */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.logo-footer {
+  color: var(--font-color-white);
+}
+
+/* -----Visually hidden----- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* -----Header styles----- */
+.page-header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header a {
+  padding: 32px 0;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 93px;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.header-contacts {
+  color: var(--font-color-secondary);
+
+  display: flex;
+}
+
+.header-contacts .link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-item:nth-child(2) {
+  margin-left: 30px;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+/* -----Social styles----- */
+.social {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50%;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: var(--social-link-color);
+}
+
+.social-item:hover .social-icon,
+.social-item:focus .social-icon {
+  fill: var(--bg-color-main);
+}
+
+/* -----Footer styles----- */
+.page-footer {
+  padding: 60px 0;
+  background-color: var(--bg-color-dark);
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--font-color-white);
+}
+
+.footer-address .link {
+  margin-top: 9px;
+
+  color: var(--transparent-links);
+}
+
+.footer-address .link:hover,
+.footer-address .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-social {
+  margin-left: 70px;
+}
+
+.social-title {
+  font-weight: 500;
+  line-height: 1.172;
+  text-transform: uppercase;
+
+  color: var(--font-color-white);
+}
+
+.social {
+  margin-top: 20px;
+}
+
+footer .social-item {
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer .social-icon {
+  fill: var(--bg-color-main);
+}
