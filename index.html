@@ -70,7 +70,7 @@
             Эффективные решения<br />
             для вашего бизнеса
           </h1>
-          <a href="" class="order-btn">Заказать услугу</a>
+          <button class="order-btn" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- Advantages Section -->
@@ -443,7 +443,7 @@
               </a>
             </li>
 
-            <li>
+            <li class="social-item">
               <a href="#" class="social-link">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/sprite.svg#icon-twitter" />
@@ -470,5 +470,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="social-icon" width="30" height="30">
+            <use href="./images/sprite.svg#icon-close" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal JS -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
