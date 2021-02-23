@@ -118,8 +118,30 @@
 }
 
 .visuals-item {
+  position: relative;
+
   flex-basis: calc(100% / 3 - var(--item-set-gap));
   margin-left: var(--item-set-gap);
+}
+
+.visuals-descr {
+  padding: 27px 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  background-color: var(--transparent-items);
+}
+
+.descr-title {
+  font-weight: 500;
+  line-height: 1.142;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--font-color-white);
 }
 
 /* -----Team styles----- */

@@ -51,6 +51,7 @@ img {
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   --transparent-links: rgba(255, 255, 255, 0.6);
   --item-set-gap: 30px;
+  --transparent-items: rgba(47, 48, 58, 0.8);
 }
 
 body {
